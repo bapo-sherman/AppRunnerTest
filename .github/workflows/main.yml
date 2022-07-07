@@ -42,7 +42,7 @@ jobs:
           service: app-runner-git-deploy-service
           image: ${{ steps.build-image.outputs.image }}
           access-role-arn: ${{ secrets.ROLE_ARN }}
-          region: us-east-1
+          region: us-west-2
           cpu : 1
           memory : 2
           wait-for-service-stability: true
